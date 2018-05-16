@@ -11,7 +11,7 @@ class Prestation(models.Model):
 
     name = fields.Char(string="Nom")
     text = fields.Char(string="Description")
-    #equipement_ids = fields.One2many('aquaRdv.equipement', string="Equipement requis")
-    #cabine_ids = fields.One2many('aquaRdv.cabine', string="Equipement requis")
+    equipement_ids = fields.One2many('aquardv.equipement', 'prestation_id', string="Equipement requis")
+    #cabine_ids = fields.One2many('aquardv.cabine', string="Cabine possible")
 
     
