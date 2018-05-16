@@ -3,14 +3,14 @@
     'name': "aqua_rdv",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Module de prise de rendez-vous pour l'institut Aqua Attitude""",
 
     'description': """
-        Long description of module's purpose
+        Module pour la gestion de la prise de rendez vous pour l'institut de beauté Aqua Attitude
+        V1 : prise de rendez vous depuis l'interface Back
     """,
 
-    'author': "My Company",
+    'author': "Noosys",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','calendar'],
 
     # always loaded
     'data': [
