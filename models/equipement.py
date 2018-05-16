@@ -10,4 +10,3 @@ class Equipement(models.Model):
 
     name = fields.Char(string="Nom")
     prestation_id = fields.Many2one('aquardv.prestation', invisible=True)
-    #cabine_ids = One2many('aquardv.cabine', string="Cabines possible")

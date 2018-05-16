@@ -12,6 +12,6 @@ class Prestation(models.Model):
     name = fields.Char(string="Nom")
     text = fields.Char(string="Description")
     equipement_ids = fields.One2many('aquardv.equipement', 'prestation_id', string="Equipement requis")
-    #cabine_ids = fields.One2many('aquardv.cabine', string="Cabine possible")
+    cabine_ids = fields.Many2many('aquardv.cabine', 'rel_cabine_prestation', string="Cabine possible")
 
     

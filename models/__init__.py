@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import prestation, equipement
+from . import prestation, equipement, cabine

@@ -1,19 +1,30 @@
 <odoo>
   <data>
 
+    <!-- MENU ACTION -->
     <record model="ir.actions.act_window" id="action_rdv_presta">
       <field name="name">Préstation</field>
       <field name="res_model">aquardv.prestation</field>
       <field name="view_mode">tree,form</field>
     </record>
+
     <record model="ir.actions.act_window" id="action_rdv_stuff">
       <field name="name">Equipements</field>
       <field name="res_model">aquardv.equipement</field>
       <field name="view_mode">tree,form</field>
     </record>
+
+    <record model="ir.actions.act_window" id="action_rdv_cabine">
+      <field name="name">Equipements</field>
+      <field name="res_model">aquardv.cabine</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- MENU ITEM -->
     <menuitem name="Rendez-vous" id="rdv_top_menu" parent="calendar.mail_menu_calendar" sequence="1"/>
     <menuitem name="Préstations" id="presta_menu" parent="rdv_top_menu" sequence="1" action="action_rdv_presta"/>
     <menuitem name="Equipements" id="stuff_menu" parent="rdv_top_menu" sequence="2" action="action_rdv_stuff"/>
+    <menuitem name="Cabines" id="cabine_menu" parent="rdv_top_menu" sequence="3" action="action_rdv_cabine"/>
 
   </data>
 </odoo>
