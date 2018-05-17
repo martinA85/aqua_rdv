@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+
+        <!-- calendar.event form view -->
+        <record id="calendar_event_aqua_rdv" model="ir.ui.view">
+            <field name="name">calendar.event.view.form</field>
+            <field name="model">calendar.event</field>
+            <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+            <field name="arch" type="xml">
+                <field name="allday" position="after">
+                    <field name="is_prestation" />
+                </field>
+
+                <page name="page_misc" position="after">
+                    <page name="rdvaqua" string="Rendez-vous" attrs="{'invisible': [('is_prestation', '!=', True)]}">
+                        <group>
+                            <field name="with_partner_id" />
+                            <field name="for_partner_id" />
+                            <field name="prestation_id" />
+                            <field name="cabine_id" />
+                        </group>
+                    </page>
+                </page>
+            </field>
+        </record>
+
+    </data>
+</odoo>

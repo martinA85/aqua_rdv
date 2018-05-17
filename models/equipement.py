@@ -9,4 +9,4 @@ class Equipement(models.Model):
     _description = "Model pour les équipement de l'institut"
 
     name = fields.Char(string="Nom")
-    prestation_id = fields.Many2one('aquardv.prestation', invisible=True)
+    prestation_id = fields.Many2one("aquardv.prestation")
