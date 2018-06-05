@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','calendar'],
+    'depends': ['base','calendar', 'point_of_sale'],
 
     # always loaded
     'data': [
@@ -28,6 +28,8 @@
         'views/views.xml',
         'views/templates.xml',
         'views/calendar_views.xml',
+        'views/product_template_view.xml',
+        'views/res_partner_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
