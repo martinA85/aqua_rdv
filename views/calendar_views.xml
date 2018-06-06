@@ -18,6 +18,7 @@
                             <field name="for_partner_id" />
                             <field name="prestation_id" />
                             <field name="cabine_id" />
+                            <button name="valid_prestation" type="object" class="btn-primary" string="Valid Event"></button>
                         </group>
                     </page>
                 </page>
